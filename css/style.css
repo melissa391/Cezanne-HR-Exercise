@@ -1,0 +1,182 @@
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #CACED5;
+}
+
+nav a {
+    margin-left: 24px;
+
+}
+
+a img {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+nav img {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-right: 24px;
+}
+
+
+/* Grey Container */
+
+.grey-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+}
+
+
+/* White Container */
+
+.white-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 97px 42px;
+}
+
+
+/* Item Container */
+
+.item-container {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.title {
+    position: relative;
+    padding-top: 42px;
+    margin-left: 32px;
+}
+
+
+/* Image Container */
+
+.image-container {
+ margin-top: 176px;
+ padding-bottom: 70px;
+}
+
+.image {
+    display: flex;
+    align-items: flex-end;
+   
+    
+}
+
+.image img {
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.image h5 {
+    text-align: center;
+    margin: 0px;
+    width: 232px;
+    padding-top: 18px; 
+    padding-bottom: 18px;
+    position: relative;
+    opacity: 50%;
+    z-index: 2;
+    border-radius: 7px;
+}
+
+.name {
+ 
+}
+
+.non-working {
+    background-color: #A09E9F;
+}
+
+.holiday {
+    background-color: #F7C407;
+}
+
+.sickness {
+    background-color: #E31B13;
+}
+
+.working {
+    background-color: #19A882;
+}
+
+
+/* Button */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+button {
+    padding: 27px 237px;
+    border-radius: 7px;
+    box-shadow: 1px;
+    font-size: 38px;
+    font-weight: bold;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    
+  
+
+    .image h5 {
+        width: 122px;
+        padding-top: 8px;
+        padding-bottom: 8px; 
+    }
+
+    div.name {
+        width: 122px;
+    }
+
+    .profile {
+        width: 122px;
+    }
+
+    
+
+
+
+
+
+}

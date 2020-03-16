@@ -1,0 +1,421 @@
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+h1, h2, h3, h4 h5, h6, img, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #CACED5;
+}
+
+nav a {
+    margin-left: 24px;
+
+}
+
+a img {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+nav img {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-right: 24px;
+}
+
+
+/* Grey Container */
+
+.grey-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+}
+
+
+/* White Container */
+
+.white-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 97px 42px;
+    padding: 100px 140px;
+}
+
+
+/* Item Container */
+
+.item-container, #more {
+    
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.title {
+    position: relative;
+    margin-left: 32px;
+    padding-bottom: 32px;
+}
+
+.title h1 {
+    font-size: 50px;
+    color: #4D4F5C;
+    
+}
+
+.title h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #767986;
+}
+
+
+/* Search */
+
+.search-bar {
+    margin-top: 18px;
+    display: flex;
+    border: 1px solid #767986;
+    border-radius: 3.5px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.search {
+    padding: 11px 15px;
+    border: none;
+    width: 100%;
+}
+
+.search-bar img {
+    padding-right: 15px; 
+}
+
+
+
+
+
+
+/* Image Container */
+
+.image-container {
+ margin-top: 176px;
+ 
+ margin-right: auto;
+ padding-bottom: 70px;
+}
+
+.image {
+    display: flex;
+    align-items: flex-end;
+   
+    
+}
+
+a .image {
+    display: flex;
+    align-items: flex-end;
+   
+    
+}
+
+.image img {
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.image h5 {
+    text-align: center;
+    margin: 0px;
+    width: 232px;
+    padding-top: 18px; 
+    padding-bottom: 18px;
+    position: relative;
+    opacity: 50%;
+    z-index: 2;
+    border-radius: 7px;
+}
+
+
+
+.non-working {
+    background-color: #A09E9F;
+}
+
+.holiday {
+    background-color: #F7C407;
+}
+
+.sickness {
+    background-color: #E31B13;
+}
+
+.working {
+    background-color: #19A882;
+}
+
+a h4 {
+    color: #4D4F5C;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+
+/* Button */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+button {
+    padding: 27px 237px;
+    border-radius: 7px;
+    box-shadow: 1px;
+    font-size: 38px;
+    font-weight: bold;
+
+}
+
+
+
+/* Profile Page */
+
+.x {
+    float: right;
+    width: 32px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid #CACED5;
+    box-shadow: 1px;
+    text-align: center;
+}
+
+.x a {
+    text-align: center;
+}
+
+.profile-page-image {
+    text-align: center;
+    padding-bottom: 82px;
+}
+
+.profile-page-image h1 {
+  padding-top: 32px;
+}
+
+
+
+/* Employee Engagement Buttons */
+
+.employee-engagement {
+    margin-top: 58px;
+    display: flex;
+    
+    
+    flex-wrap: wrap;
+
+    
+}
+
+.message, .profile-icon, .birthdays, .leaving, .feedback {
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 7px;
+    width: 160px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0.5px solid #CACED5;
+    
+    align-items: center;
+
+}
+
+.profile-text {
+    padding-top: 5%;
+}
+
+
+
+/* Table */
+
+
+
+.status-box h2 {
+   padding-bottom: 32px;
+}
+
+table {
+    
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+
+.working-status {
+    color: #19A882;
+    border-radius: 7px;
+    font-weight: normal;
+    text-align: left;
+    
+    
+}
+
+.holiday-status {
+    color: #F7C407;
+    border-radius: 7px;
+    text-align: left;
+    
+}
+
+.afternoon, .morning {
+    font-weight: bold;
+    text-align: left;
+    width: 10%
+}
+
+
+/* Show More */ 
+
+#more {
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .search-bar {
+        display: none;
+        
+    }
+
+
+
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    
+  
+
+    .image h5 {
+        width: 122px;
+        padding-top: 8px;
+        padding-bottom: 8px; 
+    }
+
+    div.name {
+        width: 122px;
+    }
+
+    .profile {
+        width: 122px;
+    }
+
+  
+    
+    .message, .profile-icon, .birthdays, .leaving, .feedback {
+    
+        width: 160px;
+        border-radius: 3.5px;
+        
+      
+    }
+
+
+    .item-container {
+        margin-top: 10%;;
+    }
+
+    
+    .image-container {
+        margin-top: 5%;
+    }
+        
+    button {
+        padding: 10px 95px;
+        border-radius: 3.5px;
+        box-shadow: 1px;
+        font-size: 75%;
+        font-weight: bold;
+    }
+
+
+    .white-container {
+        margin: 26px 23.5px;
+        padding: 28px 23.5px;
+    }
+
+    .item-container, #more {
+        padding: 0px;
+        margin-top: 150px;
+    }
+
+    .title {
+        padding: 0px;
+        margin: 0px
+    }
+
+    .title h1 {
+        font-size: 22px;
+    }
+    
+    .title h3 {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+
+    a h4 {
+        font-size: 15px;
+    }
+
+
+
+
+}

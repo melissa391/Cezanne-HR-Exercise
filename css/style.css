@@ -7,7 +7,7 @@ body, html {
     font-weight: 100;
 }
 
-h1, h2, h3, h4 h5, h6 hr {
+h1, h2, h3, h4 h5, h6, img, a {
     margin: 0px;
     padding: 0px;
 }
@@ -68,10 +68,11 @@ nav img {
 
 /* Item Container */
 
-.item-container {
+.item-container, #more {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 42px;
     padding-left: 32px;
@@ -83,15 +84,57 @@ nav img {
 
 .title {
     position: relative;
-    padding-top: 42px;
     margin-left: 32px;
+    padding-bottom: 32px;
 }
+
+.title h1 {
+    font-size: 50px;
+    color: #4D4F5C;
+    
+}
+
+.title h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #767986;
+}
+
+
+/* Search */
+
+.search-bar {
+    margin-top: 18px;
+    display: flex;
+    border: 1px solid #767986;
+    border-radius: 3.5px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.search {
+    padding: 11px 15px;
+    border: none;
+    width: 100%;
+}
+
+.search-bar img {
+    padding-right: 15px; 
+}
+
+
+
+
 
 
 /* Image Container */
 
 .image-container {
  margin-top: 176px;
+ 
+ margin-right: auto;
  padding-bottom: 70px;
 }
 
@@ -127,9 +170,7 @@ a .image {
     border-radius: 7px;
 }
 
-.name {
- 
-}
+
 
 .non-working {
     background-color: #A09E9F;
@@ -145,6 +186,12 @@ a .image {
 
 .working {
     background-color: #19A882;
+}
+
+a h4 {
+    color: #4D4F5C;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 
@@ -170,6 +217,20 @@ button {
 
 /* Profile Page */
 
+.x {
+    float: right;
+    width: 32px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid #CACED5;
+    box-shadow: 1px;
+    text-align: center;
+}
+
+.x a {
+    text-align: center;
+}
+
 .profile-page-image {
     text-align: center;
     padding-bottom: 82px;
@@ -180,57 +241,102 @@ button {
 }
 
 
+
+/* Employee Engagement Buttons */
+
 .employee-engagement {
     margin-top: 58px;
     display: flex;
-    justify-content: space-between;
+    
+    
     flex-wrap: wrap;
+
     
 }
 
 .message, .profile-icon, .birthdays, .leaving, .feedback {
-    
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-bottom: 40px;
     text-align: center;
     border-radius: 7px;
-    padding: 2% 4%;
+    width: 160px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 0.5px solid #CACED5;
-    line-height: 50%;
+    
+    align-items: center;
+
 }
 
 .profile-text {
-    padding-top: 24px;
+    padding-top: 5%;
 }
 
 
-.status-items {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
+/* Table */
 
 
-.status-items h3 {
-    padding-right: 184px;
+
+.status-box h2 {
+   padding-bottom: 32px;
 }
+
+table {
+    
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
 
 
 .working-status {
-    background-color: #19A882;
-    padding: 18px 32px;
+    color: #19A882;
+    border-radius: 7px;
+    font-weight: normal;
+    text-align: left;
+    
+    
 }
 
 .holiday-status {
-    background-color: #F7C407;
-    padding: 18px 52px;
+    color: #F7C407;
+    border-radius: 7px;
+    text-align: left;
+    
 }
 
-.hr-style {
-    border: 1px solid #4D4F5C;
-    border-radius: 0.5px;
-    height: 30px;
+.afternoon, .morning {
+    font-weight: bold;
+    text-align: left;
+    width: 10%
 }
 
+
+/* Show More */ 
+
+#more {
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .search-bar {
+        display: none;
+        
+    }
+
+
+
+    
+}
 
 
 @media only screen and (max-width: 600px){
@@ -255,20 +361,60 @@ button {
     
     .message, .profile-icon, .birthdays, .leaving, .feedback {
     
-        
+        width: 160px;
         border-radius: 3.5px;
-        padding: 2%% 2%;
+        
       
     }
 
-    .status-items h3 {
-        padding-right: 0px;
+
+    .item-container {
+        margin-top: 10%;;
+    }
+
+    
+    .image-container {
+        margin-top: 5%;
+    }
+        
+    button {
+        padding: 10px 95px;
+        border-radius: 3.5px;
+        box-shadow: 1px;
+        font-size: 75%;
+        font-weight: bold;
     }
 
 
-    hr {
-        display: none;
+    .white-container {
+        margin: 26px 23.5px;
+        padding: 28px 23.5px;
     }
+
+    .item-container, #more {
+        padding: 0px;
+        margin-top: 150px;
+    }
+
+    .title {
+        padding: 0px;
+        margin: 0px
+    }
+
+    .title h1 {
+        font-size: 22px;
+    }
+    
+    .title h3 {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+
+    a h4 {
+        font-size: 15px;
+    }
+
 
 
 

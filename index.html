@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Cezanne Exercise</title>
+    <title>Cezanne HR Exercise</title>
 </head>
 <body>
-
+    
+    <!--Navigation Bar-->
     <nav>
         <a href="index.html"><img src="images/cezanne-logo.jpg" alt="cezanne logo"></a>
         <img src="images/profile-icon.jpg" alt="profile icon">
@@ -22,11 +23,20 @@
     <div class="grey-container">
         <div class="white-container">
 
+            <!--Title-->
             <div class="title"> 
                 <h1>Team Members</h1>
-                <h3>Showing 10 Subordinates</h3>
+                <h3>Showing <span id="number">10</span> Subordinates</h3>
             </div>
 
+
+            <!--Search Box-->
+            <form class="search-bar">
+                <input class="search" type="text" placeholder="Search Subordinates">
+                <img src="images/profile-page/search.jpg" alt="magnifying glass">
+            </form>
+
+            <!--Team Members Section-->
             <div class="item-container">
 
                 <div class="image-container"> 
@@ -130,17 +140,165 @@
                 </div>
 
 
+                <!--Show More-->
+
+                <span id="more">
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/alexandra.jpg" alt="profile image" class="profile">
+                            <h5 class="working">Working</h5>
+                        </div>
+                        <div class="name">
+                           <a href="alexandra-profile.html"><h4>Alexandra Harris</h4></a> 
+                        </div> 
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/georgia.jpg" alt="profile image" class="profile">
+                            <h5 class="holiday">Holiday</h5>
+                        </div>
+                        <div class="name">
+                            <a href="georgia-profile.html"><h4>Georgia Johnson</h4></a> 
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/steven.jpg" alt="profile image" class="profile">
+                            <h5 class="sickness">Sickness</h5>
+                        </div>
+                        <div class="name">
+                              <a href="steven-profile.html"><h4>Steven Wright</h4></a> 
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/shaun.jpg" alt="profile image" class="profile">
+                            <h5 class="non-working">Non-Working</h5>
+                        </div>
+                        <div class="name">
+                             <a href="shaun-profile.html"><h4>Shaun Acker</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/sarah.jpg" alt="profile image" class="profile">
+                            <h5 class="working">Working</h5>
+                        </div>
+                        <div class="name">
+                             <a href="sarah-profile.html"><h4>Sarah Smith</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/harry.jpg" alt="profile image" class="profile">
+                            <h5 class="working">Working</h5>
+                        </div>
+                        <div class="name">
+                            <a href="harry-profile.html"><h4>Harry Walsh</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/julie.jpg" alt="profile image" class="profile">
+                            <h5 class="working">Working</h5>
+                        </div>
+                        <div class="name">
+                           <a href="julie-profile.html"><h4>Julie Flanagan</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/jane.jpg" alt="profile image" class="profile">
+                            <h5 class="sickness">Sickness</h5>
+                        </div>
+                        <div class="name">
+                            <a href="jane-profile.html"><h4>Jane Willis</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/jack.jpg" alt="profile image" class="profile">
+                            <h5 class="working">Working</h5>
+                        </div>
+                        <div class="name">
+                            <a href="jack-profile.html"><h4>Jack Parker</h4></a>
+                        </div>
+                    </div>
+    
+                    <div class="image-container"> 
+                        <div class="image">
+                            <img src="images/niamh.jpg" alt="profile image" class="profile">
+                            <h5 class="non-working">Non-Working</h5>
+                        </div>
+                        <div class="name">
+                            <a href="niamh-profile.html"><h4>Niamh Tulley</h4></a>
+                        </div>
+                    </div>
+
+                </span>
+
+
+
+
+
 
                 
             </div>
 
             <div class="button"> 
-               <button>Show More</button>
+               <button onclick="myFunction()" id="myBtn">Show More</button>
             </div>
 
 
         </div>
     </div>
+
+    <script>
+        function myFunction() {
+          var number = document.getElementById("number");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (more.style.display === "none") {
+            more.style.display = "inline";
+            btnText.innerHTML = "Show more"; 
+            moreText.style.display = "none";
+          } else {
+            number.innerHTML = "20";
+            btnText.innerHTML = "Show less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+
+    <script>
+
+      //  function myFunction() { 
+  
+  //var moreText = document.getElementById("more");
+  //var btnText = document.getElementById("myBtn");
+
+  //if (more.style.display === "none") {
+  //  more.style.display = "inline";
+  //  btnText.innerHTML = "Show more"; 
+  //  moreText.style.display = "none";
+  //} else {
+  //  more.style.display = "none";
+  //  btnText.innerHTML = "Show Less"; 
+  //  moreText.style.display = "inline";
+  //}
+ //}
+
+    </script>
 
     
     

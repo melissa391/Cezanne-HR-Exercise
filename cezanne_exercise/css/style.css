@@ -7,7 +7,7 @@ body, html {
     font-weight: 100;
 }
 
-h1, h2, h3, h4 h5, h6 hr {
+h1, h2, h3, h4 h5, h6, img, a {
     margin: 0px;
     padding: 0px;
 }
@@ -217,6 +217,20 @@ button {
 
 /* Profile Page */
 
+.x {
+    float: right;
+    width: 32px;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid #CACED5;
+    box-shadow: 1px;
+    text-align: center;
+}
+
+.x a {
+    text-align: center;
+}
+
 .profile-page-image {
     text-align: center;
     padding-bottom: 82px;
@@ -243,10 +257,12 @@ button {
 .message, .profile-icon, .birthdays, .leaving, .feedback {
     margin-right: auto;
     margin-bottom: auto;
+    margin-bottom: 40px;
     text-align: center;
     border-radius: 7px;
-    width: 200px; 
-    height: 200px;
+    width: 160px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 0.5px solid #CACED5;
     
     align-items: center;
@@ -254,7 +270,7 @@ button {
 }
 
 .profile-text {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 
@@ -345,9 +361,9 @@ th, td {
     
     .message, .profile-icon, .birthdays, .leaving, .feedback {
     
-        
+        width: 160px;
         border-radius: 3.5px;
-        padding: 2% 2%;
+        
       
     }
 
